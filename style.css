@@ -1,0 +1,1262 @@
+/*   
+Theme Name: Simple and Usable
+Theme URI: http://amitayre.com/wp-themes
+Description:  Responsive Wordpress theme for Business
+Author: Amit Ayre
+Author URI: http://amitayre.com
+Version: 1
+Framework: 320 and Up boilerplate extension Andy Clarke http://about.me/malarkey
+
+*/
+
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { 
+display : block; }
+
+audio[controls], canvas, video { 
+display : inline-block; 
+*display : inline; 
+*zoom : 1; }
+
+/* 1. ROOT ============================================================================= */
+
+html {
+overflow-y : scroll;
+}
+
+body { 
+margin : 0 auto;
+padding : 0;
+width : 90% /* 252px */;
+height:100%;
+font : 100%/1.4 Cambria, Georgia, Times, "Times New Roman";
+background-color : transparent;
+}
+
+button, 
+input, 
+select, 
+textarea { 
+font-family : Helvetica Neue, Helvetica, "Arial", sans-serif; 
+}
+
+/* 2. HEADINGS (320 and Up typography defaults) ==================================================== */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+font-family : Helvetica Neue, Helvetica, "Arial";
+font-weight : bold; }
+
+h1 { 
+font-size : 2em; /* 48 / 16 = 3 */
+line-height : 1; }
+
+h2 { 
+margin-bottom : .75em;
+font-size : 2em; /* 36 / 16 = 2 */
+line-height : 1.2; }
+
+h3 { 
+margin-bottom : 1em;
+font-size : 1.5em; /* 24 / 16 = 1.5 */
+line-height : 1.3; }
+
+h4 { 
+margin-bottom : 1.25em;
+font-size : 1.25em; /* 20 / 16 = 1.25 */
+line-height : 1.25; }
+
+h5 { 
+margin-bottom : 1.5em;
+font-size : 1em; /* 16 / 16 = 1 */ }
+
+h6 { 
+font-size : 1em; /* 16 / 16 = 1 */ }
+
+/* 3. TYPOGRAPHY (320 and Up typography defaults) ============================================================================= */
+
+p, 
+ol, 
+ul, 
+dl, 
+address { 
+margin-bottom : 1.5em; 
+font-size : 1em; /* 16 / 16 = 1 */ }
+
+p {
+
+text-align : justify; }
+
+ul, 
+ol { 
+margin : 0; 
+padding : 0; }
+
+li ul, 
+li ol { 
+margin : 0;
+font-size : 1em;  /* 16 / 16 = 1 */ 
+}
+
+li {
+	list-style: none;
+}
+
+
+dl, 
+dd { 
+margin-bottom : 1.5em; }
+
+dt { 
+font-weight : normal; }
+
+blockquote  { 
+margin : 0 0 1.5em -24px; 
+padding-left : 24px; 
+border-left : 1px solid rgb(200,200,200);
+font-style : italic; }
+
+abbr[title] { 
+border-bottom : 1px dotted; 
+cursor : help; }
+
+b, strong { 
+font-weight : bold; }
+
+dfn { 
+font-style : italic; }
+
+hr { 
+display : block; 
+margin : 1em 0; 
+padding : 0;
+height : 1px; 
+border : 0; 
+border-top : 1px solid rgb(204,204,204); }
+
+ins { 
+background-color : rgb(240,240,240); 
+color : rgb(0,0,0); 
+text-decoration : none; }
+
+
+pre, 
+code, 
+kbd, 
+samp { 
+font-family : monospace, monospace; 
+font-family : 'courier new', monospace; 
+font-size : .875em; 
+line-height : 1.5; }
+
+pre { 
+white-space : pre; 
+white-space : pre-wrap; 
+word-wrap : break-word; }
+
+q { 
+quotes : none; }
+
+q:before, 
+q:after { 
+content : ""; 
+content : none; }
+
+small { 
+font-size : 1em; /* 16 / 16 = 1 */ }
+
+sub, sup { 
+font-size : 75%; 
+line-height : 0; 
+position : relative; 
+vertical-align : baseline; }
+
+sup { 
+top : -.5em; }
+
+sub { 
+bottom : -.25em; }
+
+/* 4.LINKS ============================================================================= */
+
+a { 
+color : rgb(23,119,175);
+text-decoration:none; }
+
+a:visited { 
+color : rgb(26, 138, 204); }
+
+a:focus { 
+outline : thin dotted; 
+color : rgb(0,0,0); }
+
+a:hover, 
+a:active { 
+outline : 0;
+color: #000;
+}
+
+/* 5.FIGURES & IMAGES ============================================================================= */
+
+figure {
+margin-bottom : 1.5em; }
+
+figure img,
+figure object,
+figure embed {
+margin-bottom : .75em;
+max-width : 100%; }
+
+figcaption {
+display : block;
+font-weight : normal; }
+
+img {
+border : 0; }
+
+svg:not(:root) {
+overflow : hidden; }
+
+/* 6.TABLES ============================================================================= */
+
+table { 
+border-collapse : collapse;
+border-spacing : 0;
+margin-bottom : 1.4em; 
+width : 100%;
+font-size : .875em; /* 14 / 16 = .875 */ }
+
+th, td, caption { 
+padding : .25em 10px .25em 5px; }
+
+tfoot { 
+font-style : italic; }
+
+caption { 
+background-color : transparent; }
+
+/* 7.FORMS ============================================================================= */
+
+form { 
+margin : 0; }
+
+fieldset { 
+margin-bottom : 1.5em; 
+padding : 0; 
+border-width : 0; }
+
+legend { 
+margin-left : -7px; 
+padding : 0; 
+border-width : 0; }
+
+label { 
+font-weight : normal;
+cursor : pointer; }
+
+button, 
+input, 
+select, 
+textarea { 
+font-size : 100%; 
+margin : 0; 
+vertical-align : baseline; 
+*vertical-align : middle; }
+
+button, input { 
+line-height : normal; 
+*overflow : visible; }
+
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] { 
+cursor : pointer; }
+
+input[type="checkbox"], 
+input[type="radio"] { 
+box-sizing : border-box; }
+
+input[type="search"] { 
+box-sizing : content-box; }
+
+button::-moz-focus-inner, 
+input::-moz-focus-inner { 
+padding : 0;
+border : 0;  }
+
+textarea { 
+overflow : auto; 
+vertical-align : top; }
+
+/* Colors for form validity */
+input:valid, 
+textarea:valid   {  
+-webkit-box-shadow : 0 0 2px rgb(0,0,255); 
+-moz-box-shadow : 0 0 2px rgb(0,0,255);
+box-shadow : 0 0 2px rgb(95,95,95);}
+
+input:invalid, 
+textarea:invalid {
+-webkit-box-shadow : 0 0 2px rgb(255,0,0); 
+-moz-box-shadow : 0 0 2px rgb(255,0,0);
+box-shadow : 0 0 2px rgb(255,0,0); }
+
+/* if valid, showing default 255/255/255 */ 
+
+.no-boxshadow input:invalid, 
+.no-boxshadow textarea:invalid {
+background-color : rgb(240,221,221); }
+
+/* 8 BRANDING		============================================================================= */
+
+h1#branding img{
+	display:block;
+	margin: 0 auto;
+}
+
+span#tagline {
+	text-align:center;
+	display:block;
+	font-size:1em;
+	margin-top:-1%;
+	margin-bottom:3%;
+}
+	
+
+
+/* 9 NAVIGATION 	============================================================================= */
+.main-nav li {
+	list-style:none;
+	display:inline;
+	padding:0.7em 0.90em;
+	border-right: 1px solid #CCC;
+
+
+}
+.main-nav{
+		width:100%;
+		display: block; 
+		clear:both;
+}
+
+.main-nav li:last-child {
+	border:none;
+	padding-right:0;
+}
+
+.main-nav li:first-child {
+	padding-left:0;
+}
+.main-nav ul {
+	margin: 0 auto;
+	text-align:center;
+	display:block;
+
+}
+
+
+
+
+.boxshadow .main-nav {
+	border-bottom:1px solid #D9D9D9;
+	box-shadow: 0px 1px 2px #ACACAC;
+	-moz-box-shadow: 0px 1px 2px #ACACAC;
+	-webkit-box-shadow: 0px 1px 3px  #ACACAC;
+	padding: 0.5em 0;
+	
+	
+}
+
+/*modernizer used IE7-8 styles */ 
+.no-boxshadow .main-nav {
+	border:0.1em solid #ACACAC;
+	background-color: #F0F0F0;
+	padding-top:0.6em;
+	
+
+	
+}
+
+.no-boxshadow .main-nav li {
+	border-right: none;
+
+}
+.no-boxshadow .selected {
+	background-image:none;
+	
+}
+
+
+/*.main-nav li:first-child:after{
+	content:url("img/l/apple-touch-icon-precomposed.png");
+	position:absolute;
+}*/
+
+.selected {
+	background-image: url("img/images/selected.png"); 
+	background-repeat:no-repeat;
+    background-position: 19px 36px; 
+}
+	
+	
+	
+/* 10 CONTENT 		============================================================================= */
+#main-container {
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+
+
+
+/* 11 MAIN 			============================================================================= */
+
+#features {
+	width:100%; /* 252px */
+	overflow: hidden;
+	padding:1%;
+
+}
+
+
+
+
+#features h3 {
+	width:100%;
+	text-align:center;
+	
+}
+	
+#features img {
+	display:block;
+	margin:0 auto;
+	position:relative;
+
+}
+
+#recent article img {
+	display:none;
+}
+
+span#social-set2 a img{
+	padding-right: 0.3em ;
+	padding-left:0.2em;
+
+}
+
+#footer {
+
+    border-top-width: 2px;
+    clear: both;
+    color: #AAAAAA;
+	font-size:0.8em;
+    position: relative;
+	text-align:center;
+	margin-bottom:2%;
+	
+	
+	
+}
+
+span#social-set2 {
+	float:left;
+}
+
+div#themeby {
+	float:left;
+}
+
+div#copyrights {
+	width:100%;
+	text-align:center;
+	padding-top:1%;
+	display:block;
+	position:relative;
+	float:left;
+}
+
+#social-set3 {
+	padding-right:0.7em;
+	margin-top: 0.8em;
+	display:inline;
+}
+
+#read-more {
+	display:block;
+}
+
+/* features home */ 
+
+#main-container h2 {
+	text-align:center;
+	width:100%;
+}
+
+#other-features li {
+	list-style:none;
+}
+
+/* blog section */ 
+
+.blog-image {
+	margin-bottom:1em;
+
+}
+
+.blog-image img {
+	max-width:79.365079%; /*200px /252px */ 
+	display: block;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.border {
+padding: 5px;
+border: 1px solid #E5E5E5;
+-webkit-box-shadow: 1px 2px 3px #F5F5F5;
+-moz-box-shadow: 1px 1px 3px #F5F5F5;
+box-shadow: 1px 1px 3px #F5F5F5;
+
+}
+
+span.about-content {
+	display:block;
+	width:95%;
+}
+
+/* comments - form */
+form#commentform div{
+	margin: 0 5px 20px 0;
+}
+
+
+
+
+
+/*contact form */ 
+
+#contact-form label {
+	width: 100%;
+	display:block;
+	margin: 1em 0 0.5em 0;
+	
+}
+	
+#contact-form input {
+	width:90%;
+
+}
+
+#contact-form {
+	width: 100%;
+}
+
+#contact-form textarea {
+	display:block;
+    width: 90%;
+	margin-bottom:1em;
+}
+
+#show-map img {
+	max-width:100%;
+	display:block;
+}
+
+.item {
+	border-bottom: none;
+	padding: 10px 10px 0 10px;
+	background-color: #EEE;
+	color: #333;
+
+}
+
+.item:hover {
+	background-color: #C2C2C2;
+
+}
+
+.item:hover h5 a{
+	color:#1777AF;
+}
+
+.item h5 {
+	text-align:center;
+}
+
+.item h5 a{
+	color: #999;
+
+}
+
+.item h5 a:hover {
+text-decoration: underline;
+}
+
+
+.masonry-brick img {
+	border:5px solid #FFF;
+	margin: 0 auto;
+	display:block;
+}
+
+
+
+/* 12 COMPLEMENTARY ============================================================================= */
+
+/* 13 CONTENTINFO 	============================================================================= */
+
+/* 14 GLOBAL OBJECTS ============================================================================= */
+
+.clearfix:before, 
+.clearfix:after { 
+content : "\0020"; 
+display : block; 
+height : 0; 
+overflow : hidden; }
+
+.clearfix:after { 
+clear : both; }
+
+/* 15 VENDOR-SPECIFIC ============================================================================= */
+
+html { 
+-webkit-overflow-scrolling : touch; 
+-webkit-tap-highlight-color : rgb(52,158,219); 
+-webkit-text-size-adjust : 100%; 
+-ms-text-size-adjust : 100%; }
+
+.clearfix { 
+}
+
+::-webkit-selection { 
+background : rgb(23,119,175); 
+color : rgb(250,250,250); 
+text-shadow : none; }
+
+::-moz-selection { 
+background : rgb(23,119,175); 
+color : rgb(250,250,250); 
+text-shadow : none; }
+
+::selection { 
+background : rgb(23,119,175); 
+color : rgb(250,250,250); 
+text-shadow : none; }
+
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] { 
+-webkit-appearance : button; }
+
+::-webkit-input-placeholder {
+font-size : .875em; 
+line-height : 1.4; }
+
+input:-moz-placeholder { 
+font-size : .875em; 
+line-height : 1.4; }
+
+.ie7 img,
+.iem7 img { 
+-ms-interpolation-mode : bicubic; }
+
+input[type="checkbox"], 
+input[type="radio"] { 
+box-sizing : border-box; }
+
+input[type="search"] { 
+-webkit-box-sizing : content-box;
+-moz-box-sizing : content-box; }
+
+button::-moz-focus-inner, 
+input::-moz-focus-inner { 
+padding : 0;
+border : 0; }
+
+p {
+/* http://www.w3.org/TR/css3-text/#hyphenation */
+-webkit-hyphens : auto;
+-webkit-hyphenate-character : "\2010";
+-webkit-hyphenate-limit-after : 1;
+-webkit-hyphenate-limit-before : 3;
+-moz-hyphens : auto; }
+
+/* Non-semantic helper classes */
+
+.ir { display : block; 
+overflow : hidden; 
+background-repeat : no-repeat; 
+text-align : left; 
+text-indent : -999em; 
+direction : ltr; }
+
+.ir br { 
+display : none; }
+
+.hidden { 
+display : none; 
+visibility: hidden; }
+
+.visuallyhidden { 
+position : absolute;
+margin : -1px;
+padding : 0;
+height  : 1px;
+width : 1px;
+overflow : hidden;
+border : 0; 
+clip : rect(0 0 0 0); }
+
+.visuallyhidden.focusable:active, 
+.visuallyhidden.focusable:focus { 
+position: static;
+margin : 0; 
+height : auto; 
+width : auto;
+overflow: visible; 
+clip : auto; }
+
+.invisible { 
+visibility : hidden; } 
+
+/* 16 MODERNIZR ============================================================================= */
+
+/* 17 TEMPLATE SPECIFICS ============================================================================= */
+
+/* 18 MEDIA QUERIES ============================================================================= */
+
+@media print {
+
+/* 1 ROOT ============================================================================= */
+
+* { 
+background : transparent !important; 
+color : black !important; 
+text-shadow : none !important; 
+filter : none !important; 
+-ms-filter : none !important; }
+
+@page { 
+margin : 0.5cm; }
+
+/* 2 HEADINGS ============================================================================= */
+
+h2, h3 { 
+orphans : 3; 
+widows : 3; 
+page-break-after : avoid; }
+
+/* 3 TYPOGRAPHY ============================================================================= */
+
+p { 
+orphans : 3; 
+widows : 3; }
+
+pre, blockquote { 
+border : 1px solid #999; 
+page-break-inside : avoid; }
+
+abbr[title]:after { 
+content : " (" attr(title) ")"; }
+
+/* 4 LINKS ============================================================================= */
+
+a, a:visited { 
+color : #444 !important; 
+text-decoration : underline; }
+
+a[href]:after { 
+content : " (" attr(href) ")"; }
+
+a[href^="javascript:"]:after, 
+a[href^="#"]:after { 
+content : ""; } 
+
+/* 5 FIGURES & IMAGES ============================================================================= */
+
+img { 
+max-width : 100% !important;
+page-break-inside : avoid; }
+
+/* 6 TABLES ============================================================================= */
+
+thead { 
+display : table-header-group; } 
+
+tr { 
+page-break-inside : avoid; }
+
+/* 14 GLOBAL OBJECTS ============================================================================= */
+
+.ir a:after { 
+content : ""; } 
+
+
+}
+
+/* 480px */
+@media only screen and (min-width: 480px) {
+	body {
+	width: 460px;
+	margin:0 auto;
+}
+#main-container1 {
+	width:450px;
+}
+
+.item {
+	width:400px;
+	float:left;
+	border-bottom: 1px solid #999;
+	margin-bottom:5%;
+}
+
+.masonry-brick img {
+	margin: 0 auto;
+	display:block; 
+
+}
+
+
+}
+
+
+
+/* 768px */
+@media only screen and (min-width: 768px) {
+
+
+body {
+	width: 712px;
+}
+
+/* HEADER */
+header[role="masthead"] {
+	width: 712px;
+}
+
+.main-nav ul li:nth-child(1):before {
+	content:url("img/images/home.png");
+
+}
+
+.main-nav ul li:nth-child(2):before {
+	content:url("img/images/features.png");
+}
+
+.main-nav ul li:nth-child(3):before {
+	content:url("img/images/blog.png");
+}
+
+.main-nav ul li:nth-child(4):before {
+	content:url("img/images/contact.png");
+}
+
+
+.main-nav li {
+	border-right: none;
+}
+
+#features p {
+	display:block;
+	padding-bottom:5%;
+	max-width:500px;
+}
+
+figure {
+	float:right;
+	max-width:200px;
+	width:200px;
+	margin-top: -20px;
+}
+
+#features h3 {
+	text-align:left;
+	max-width:450px;
+}
+#recent{ 
+	width: 100%;
+	margin: 20px;
+	overflow: hidden;
+}
+
+#recent article img {
+	display:block;
+	margin:0 auto;
+	
+
+}
+
+
+
+#recent article p {
+	line-height: 1.45em;
+	
+}
+
+#recent article{
+	width: 300px;
+	float: left;
+	padding: 0 30px 0 10px;
+
+	
+}
+
+span#social-set1 a img {
+	display:inline;
+	padding-left:0.4em;
+	float:right;
+}
+
+div#blog-sidebar {
+	text-align:center;
+}
+
+div#themeby {
+	float:right;
+}
+
+#contact-form {
+	width: 500px;
+	height:100%;
+
+}
+
+
+#contact-form textarea {
+	width: 400px;
+}
+
+#contact-form input {
+	width:250px;
+}
+
+#location {
+	width:700px;
+
+}
+	
+#show-map {
+	float:right;
+	width:400px;
+	margin-top:30px;
+}
+
+#address {
+	width:300px;
+	float:left;
+
+}
+
+#about-us {
+float: left;
+width: 100%;
+margin-top: 20px;
+
+}
+#main-container1 {
+	width:712px;
+}
+
+.masonry-brick img {
+
+}
+
+.item {
+	width: 200px;
+	float:left;
+	margin-left:10px;
+	border-bottom: none;
+}
+
+
+/* 1 ROOT 					============================================================================= */
+/* 2 HEADINGS 				============================================================================= */
+/* 3 TYPOGRAPHY 			============================================================================= */
+/* 4 LINKS 					============================================================================= */
+/* 5 FIGURES & IMAGES 		============================================================================= */
+/* 6 TABLES 				============================================================================= */
+/* 7 FORMS 					============================================================================= */
+/* 8 BANNER 				============================================================================= */
+/* 9 NAVIGATION				============================================================================= */
+/* 10 CONTENT 				============================================================================= */
+/* 11 MAIN 					============================================================================= */
+/* 12 COMPLEMENTARY 		============================================================================= */
+/* 13 CONTENTINFO 			============================================================================= */
+/* 14 GLOBAL OBJECTS 		============================================================================= */
+/* 15 VENDOR-SPECIFIC 		============================================================================= */
+/* 16 MODERNIZR 			============================================================================= */
+/* 17 TEMPLATE SPECIFICS 	============================================================================= */
+
+}
+
+/* 992px */
+@media only screen and (min-width: 992px) {
+	
+body {
+    height: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    padding: 0 30px;
+    width: 896px;
+
+}
+
+header[role="masthead"] {
+	width: 100%;
+}
+
+#main-container {
+	float:right;
+	width:712px;
+	margin:0 auto;
+	padding-bottom: 25px;
+
+	
+}
+
+
+
+.main-nav {
+	width: 160px;
+	position:absolute;
+	top: 130px;
+	text-align:left;
+}
+
+.main-nav li {
+	float:left;
+}
+
+.main-nav li:first-child {
+    padding-left:0.90em;
+}
+
+aside {
+	position:absolute;
+	width:150px;
+	top:360px;
+}
+
+.selected  {
+	background-image:none;
+}
+
+/* features page specific */
+
+#main-container h2 {
+	text-align:left;
+	margin-top:-1px;
+}
+
+.sidebar-category {
+    float: left;
+    width: 225px;
+	margin-right:25px;
+}
+
+.sidebar-posts, .archieve-link {
+    clear: both;
+    float: left;
+    width: 225px;
+	margin-right:25px;
+}
+
+
+
+div.more-work-links {
+    float: left;
+    width: 150px;
+	
+}
+
+div.search-box {
+    float: left;
+    width: 150px;
+}
+
+#blog-sidebar li {
+	padding:10px 0;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+#social-set-2 img {
+	margin:10px 10px 0 5px;
+}
+
+
+div#blog-sidebar {
+	text-align:left;
+}
+
+.no-boxshadow .main-nav li {
+padding-right: 7em;
+
+
+}
+
+
+/* 1 ROOT 					============================================================================= */
+/* 2 HEADINGS 				============================================================================= */
+/* 3 TYPOGRAPHY 			============================================================================= */
+/* 4 LINKS 					============================================================================= */
+/* 5 FIGURES & IMAGES 		============================================================================= */
+/* 6 TABLES 				============================================================================= */
+/* 7 FORMS 					============================================================================= */
+/* 8 BANNER 				============================================================================= */
+/* 9 NAVIGATION				============================================================================= */
+/* 10 CONTENT 				============================================================================= */
+/* 11 MAIN 					============================================================================= */
+/* 12 COMPLEMENTARY 		============================================================================= */
+/* 13 CONTENTINFO 			============================================================================= */
+/* 14 GLOBAL OBJECTS 		============================================================================= */
+/* 15 VENDOR-SPECIFIC 		============================================================================= */
+/* 16 MODERNIZR 			============================================================================= */
+/* 17 TEMPLATE SPECIFICS 	============================================================================= */
+
+}
+
+/* 1382px  - This should only work on abu 1320px */
+@media only screen and (min-width: 1200px) {
+
+/* 1 ROOT 					============================================================================= */
+body { 
+	width: 1196px; 
+    padding: 0 60px;
+	height:100%
+	}
+	
+header[role="masthead"] {
+	width: 1196px;
+}
+
+#main-container {
+	float:none;
+	position:relative;
+	 right: 50px;
+	 height:100%;
+	 
+}
+
+#recent {
+    height: 100%;
+    left: 680px;
+    position: absolute;
+    top: -15px;
+    width: 300px;
+	
+}
+
+#recent article {
+    float: left;
+    width: 250px;
+	margin-left:30px;
+}
+
+
+#other-features {
+
+    width: 170px;
+	margin-left:30px;
+	position:absolute;
+	float:right;
+	top:10px;
+	left:680px;
+	padding-left:20px;
+
+}
+
+#other-features h5 {
+	color: #C0C0C0;
+	line-height: 0.05;
+}
+
+#other-features li {
+	padding:10px 0;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+.boxshadow #other-features {
+	border-bottom:1px solid #D9D9D9;
+	box-shadow: 0px 1px 2px #ACACAC;
+	-moz-box-shadow: 0px 1px 2px #ACACAC;
+	-webkit-box-shadow: 0px 1px 3px  #ACACAC;
+	padding:0 2em 0.5em 1.2em;
+	
+}
+
+/*modernizer used IE7-8 styles*/ 
+.no-boxshadow #other-features {
+	border:0.1em solid #ACACAC;
+	background-color: #EAEAEA;
+	padding-top:0.6em;
+	
+}
+
+#blog-sidebar {
+	position: absolute;
+	top: 0;
+	left: 760px;
+	float: right;
+	width: 200px;
+	padding: 0 10px;
+	
+}
+
+div#themeby {
+	float:right;
+}
+
+
+#location {
+    height: 100%;
+    left: 680px;
+    position: absolute;
+    top: -20px;
+    width: 300px;
+}
+
+#address {
+	padding-left:10px;
+	
+}
+
+#address h3 {
+	padding-left:10px;
+}
+
+#show-map {
+	float:left;
+}
+
+#contact-us {
+	padding-left:50px;
+}
+
+
+#contact-form textarea {
+	width: 500px;
+}
+
+#main-container1 {
+	width:1050px;
+}
+.item {
+	width: 220px;
+	margin:10px;
+	float:left;
+
+}
+
+
+
+
+}
