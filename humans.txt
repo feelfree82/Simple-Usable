@@ -1,0 +1,16 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+
+<UI Designer>: <Amit Ayre>
+
+Site:www.amitayre.com
+Twitter: www.twitter.com/amitayre
+Location: Newcastle upon tyne, UK
+
+/* THANKS */
+  
+Standards: HTML5, CSS3
+  Components: Modernizr, jQuery, media queries, adaptive images  
