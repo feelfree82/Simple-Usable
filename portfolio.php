@@ -7,7 +7,7 @@
 
 ?>
 <?php get_header(); ?>
-
+<div>
 <div id="main-container"><div id="about-us-content"></div>
   <div id="main-container1">
     <?php
@@ -65,6 +65,6 @@ array(
 
   <!--end of About us --> 
 </aside>
-
+</div>
 
 <?php get_footer(); ?>

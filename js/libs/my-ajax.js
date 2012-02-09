@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
 
         jQuery.ajax({
             type: 'GET',
-            url: 'http://localhost/simple-usable/wp-admin/admin-ajax.php',
+            url: 'http://www.numyspace.co.uk/~unn_w10023996/simple-usable/wp-admin/admin-ajax.php',
             data: {
                 action: 'myAjax',
                 greeting: greeting,

@@ -121,7 +121,7 @@ Template name: Contact us
       Fax:<?php echo of_get_option ('address-body3') ?></span> </div>
     <!-- end of address -->
     
-    <div id="show-map"> <img src="/img/images/map.png" title="Location: London Office"> </div>
+    <div id="show-map"> <img src="../img/images/map.png" title="Location: London Office"> </div>
   </div>  <!--end of location -->  
   </div> <!--end of main container -->  
   

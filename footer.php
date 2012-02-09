@@ -6,14 +6,14 @@
 <footer role="contentinfo" class="clearfix" id="footer"> 
 <hr class="clearfix"/>
 
-<span id="social-set2">Get Involved<a href="<?php echo of_get_option('twitter_link');?>"><img src="/img/images/twitter.png" title="Twitter"></a>
-<a href="<?php echo of_get_option('google_link');?>"><img src="/img/images/google.png"></a></span>
+<span id="social-set2">Get Involved<a href="<?php echo of_get_option('twitter_link');?>"><img src="../img/images/twitter.png" title="Twitter"></a>
+<a href="<?php echo of_get_option('google_link');?>"><img src="../img/images/google.png"></a></span>
  
-  <div id="themeby" role="author"><span id="social-set3"><a href="http://www.wordpress.org"><img src="/img/images/wordpress.png" title="wordpress"/></a></span> Theme by <a href="http://www.twitter.com/amitayre">Amit Ayre</a></div>
+  <div id="themeby" role="author"><span id="social-set3"><a href="http://www.wordpress.org"><img  src="../img/images/wordpress.png" title="wordpress"/></a></span> Theme by <a href="http://www.twitter.com/amitayre">Amit Ayre</a></div>
   <div id="copyrights">&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></div>
 
 
-<?php echo of_get_option('google_analytics'); ?>
+<?php echo of_get_option('google_analytics'); ?>	
 <?php wp_footer(); ?>
 </footer>
     
@@ -96,7 +96,19 @@ $(window).load(function() {
 </script> 
 
 <!-- Don't forget analytics -->
-	
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2619270-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 
 </html>

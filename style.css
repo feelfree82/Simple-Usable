@@ -527,10 +527,12 @@ box-shadow: 1px 1px 3px #F5F5F5;
 }
 
 span.about-content {
-	display:block;
-	width:95%;
+    display: block;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    width: 98%;
+	border-bottom: 1px solid #F5F5F5;
 }
-
 /* comments - form */
 form#commentform div{
 	margin: 0 5px 20px 0;
