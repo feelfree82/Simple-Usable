@@ -118,16 +118,20 @@ Template name: Contact us
       <?php echo of_get_option ('address-body1') ?></br>
       </br>
       Phone:<?php echo of_get_option ('address-body2') ?></br>
-      Fax:<?php echo of_get_option ('address-body3') ?></span> </div>
+      Fax:<?php echo of_get_option ('address-body3') ?></span>
+        </div>
     <!-- end of address -->
-    
-    <div id="show-map"> <img src="../img/images/map.png" title="Location: London Office"> </div>
+    <div id="show-map" style="width: 200px; height: 200px; border: 5px solid  #D3D3D3;" title="Office Location"></div>
+ 
   </div>  <!--end of location -->  
-  </div> <!--end of main container -->  
+  </div> <!--end of main container
+  ABQIAAAA3yVW40WZ8WutYqvqYAvlzBQ-1ys3aMZ7uMhYbdo1wL4sZMVqPRRxcWzmMuSfyKDsGDdmr5lR6L3RdA
+   -->  
   
 <aside>
-<hr class="clearfix"/>
+
   <div id="about-us"> <a href="#">
+  <hr class="clearfix"/>
     <h5>About us</h5>
     </a>
     <p><?php echo of_get_option('about_us_excerpt')?></p>
@@ -139,4 +143,9 @@ Template name: Contact us
   <!--end of About us --> 
 </aside>
 
+
+
 <?php get_footer(); ?> 
+
+<script src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyCePe7pYGt17zC7kRIDpsRz4nb5F8PjTCA&sensor=true" type="text/javascript">
+</script>

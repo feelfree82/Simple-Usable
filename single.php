@@ -11,7 +11,7 @@
 			
 
 			<div class="entry">
-				<div class="attachment-post-thumbnail">
+				<div class="portfolio-thumbnail">
 <?php the_post_thumbnail(); ?>
 </div>
 					<div class="full-text">
@@ -20,7 +20,7 @@
 
 				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 				
-
+ 
 			</div>
 			
 			<?php edit_post_link('Edit this entry','','.'); ?>
@@ -29,15 +29,14 @@
 
 	<?php comments_template(); ?>
 
+<?php wp_reset_query(); ?> 
 
 <div id="blog-sidebar">
 
-	 <div class="more-work-links"><h5>My Work</h5>
-     <?php query_posts(array('post_type=>portfolio&showposts= 5', 'orderby' => 'rand')); ?>
-	 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>	
-	   <ul><li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li></ul>
-  <?php endwhile; ?>
-		<?php endif; ?>			
+	 <div class="more-work-links"><h5>More in Portfolio</h5>
+	
+     <?php query_posts(array('post_type'=>'portfolio', 'numberposts' => 5, 'orderby' => 'rand')); ?>
+	 <ul><li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li></ul>
     </div>
     
    <div class="sidebar-posts">

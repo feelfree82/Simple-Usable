@@ -364,7 +364,7 @@ span#tagline {
 
 
 .boxshadow .main-nav {
-	border-bottom:1px solid #D9D9D9;
+
 	box-shadow: 0px 1px 2px #ACACAC;
 	-moz-box-shadow: 0px 1px 2px #ACACAC;
 	-webkit-box-shadow: 0px 1px 3px  #ACACAC;
@@ -530,7 +530,7 @@ span.about-content {
     display: block;
     margin-bottom: 40px;
     padding-bottom: 30px;
-    width: 98%;
+    width: 90%;
 	border-bottom: 1px solid #F5F5F5;
 }
 /* comments - form */
@@ -953,9 +953,13 @@ div#themeby {
 }
 
 #address {
-	width:300px;
-	float:left;
+float: left;
 
+
+}
+
+#show-map {
+	float:right;
 }
 
 #about-us {
@@ -1101,9 +1105,9 @@ div#blog-sidebar {
 
 .no-boxshadow .main-nav li {
 padding-right: 7em;
-
-
 }
+
+
 
 
 /* 1 ROOT 					============================================================================= */
@@ -1132,7 +1136,7 @@ padding-right: 7em;
 /* 1 ROOT 					============================================================================= */
 body { 
 	width: 1196px; 
-    padding: 0 60px;
+    padding: 0 10px;
 	height:100%
 	}
 	
@@ -1227,12 +1231,12 @@ div#themeby {
 }
 
 #address {
-	padding-left:10px;
+	padding-left:0px;
 	
 }
 
 #address h3 {
-	padding-left:10px;
+	padding-left:0px;
 }
 
 #show-map {
@@ -1256,9 +1260,13 @@ div#themeby {
 	margin:10px;
 	float:left;
 
-}
-
-
-
 
 }
+
+.portfolio-thumbnail, .full-text img {
+	display: inline;
+	float:left;
+	margin:0px 20px 10px 0px;
+
+}
+

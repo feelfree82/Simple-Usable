@@ -29,8 +29,7 @@ Template name: Blog Homepage
 				Posted under <?php the_category(', ') ?> | 
 				
 				<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></div>
-                <span id="social-set-2"><a href="#"><img src="../img/images/twitter.png"title="Twit it"/>Twit this post &raquo;</a> 
-                <a href="#"><img src="../img/images/facebook.png" title="Facebook it"/>Share via Facebook &raquo;</a></span>
+                
 			</div>
 			<hr class="clearfix"> 
 		</div>

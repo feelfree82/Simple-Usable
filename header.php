@@ -57,6 +57,8 @@ echo 'font-family: ' . $typography['face']. '; font-size:'.$typography['size'] .
 	}
 	.main-nav ul li a {
   color: <?php echo of_get_option('nav_link_color')?>;
+  margin-left:10px;
+  
     }
 	
 	</style>

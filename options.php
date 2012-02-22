@@ -221,6 +221,19 @@ function optionsframework_options() {
 						"std" => "",
 						"type" => "text");					
 
+
+	$options[] = array( "name" => "Latitude",
+						"desc" => "To get Latitude of your location, please visit <a href='abcd.com' target='_blank'>iTouchMap</a>",
+						"id" => "latitude",
+						"std" => "",
+						"type" => "text");	
+					
+							
+	$options[] = array( "name" => "Longitude",
+						"desc" => "To get Longitude of your location, please visit <a href='abcd.com' target='_blank'>iTouchMap</a>",
+						"id" => "longitude",
+						"std" => "",
+						"type" => "text");	
 						
 										
 						
