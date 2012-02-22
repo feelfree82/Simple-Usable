@@ -29,7 +29,7 @@ array(
 		$website_url = $custom["website_url"][0];
 	?>
     <div class="item"> <a href="<?php the_permalink() ?>">
-      <?php the_post_thumbnail(); ?>
+	<?php the_post_thumbnail(); ?>
       </a>
       <h5><a href="<?php the_permalink() ?>">
         <?php the_title(); ?>
