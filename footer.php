@@ -1,4 +1,4 @@
-		<div id="footer">
+		<div id="theme-footer">
 			
 		
 
@@ -19,7 +19,24 @@
 
 
     
-    <script>
+    <script type="text/javascript">
+	
+$(function(){
+	positionFooter(); 
+	function positionFooter(){
+		var padding_top = $("#theme-footer").css("padding-top").replace("px", "");
+		var page_height = $(document.body).height() - padding_top;
+		var window_height = $(window).height();
+		var difference = window_height - page_height;
+	 
+		$("#theme-footer").css({
+			padding: difference + "px 0 0 0"
+		})
+	}
+ 
+	$(window)
+		.resize(positionFooter)
+});
 	   
 $(function() { // when the document is ready to be manipulated.  
   if (GBrowserIsCompatible()) { // if the browser is compatible with Google Map's  

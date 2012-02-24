@@ -34,9 +34,14 @@
 <div id="blog-sidebar">
 
 	 <div class="more-work-links"><h5>More in Portfolio</h5>
-	
-     <?php query_posts(array('post_type'=>'portfolio', 'numberposts' => 5, 'orderby' => 'rand')); ?>
-	 <ul><li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li></ul>
+<ul>
+<?php
+$args = array( 'numberposts' => 3, 'orderby' => 'rand', 'post_type' => 'portfolio' );
+$rand_posts = get_posts( $args );
+foreach( $rand_posts as $post ) : ?>
+	<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+<?php endforeach; ?>
+</ul>
     </div>
     
    <div class="sidebar-posts">
@@ -50,6 +55,7 @@ foreach( $rand_posts as $post ) : ?>
 <?php endforeach; ?>
 </ul>
     </div>
+    
 
 
 
