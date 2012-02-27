@@ -32,6 +32,8 @@
 <?php wp_reset_query(); ?> 
 
 <div id="blog-sidebar">
+<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-widgets')) : ?>
+
 
 	 <div class="more-work-links"><h5>More in Portfolio</h5>
 <ul>
@@ -66,7 +68,7 @@ foreach( $rand_posts as $post ) : ?>
 
     </div>
     <!--end of sidebar-category -->
-    
+  <?php endif; ?>  
 
 
   </div>  

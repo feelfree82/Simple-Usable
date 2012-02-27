@@ -1,4 +1,4 @@
-/*   
+	/*   
 Theme Name: Simple and Usable
 Theme URI: http://amitayre.com/wp-themes
 Description:  Responsive Wordpress theme for Business
@@ -334,7 +334,7 @@ span#tagline {
 .main-nav li {
 	list-style:none;
 	display:inline;
-	padding:0.7em 0.90em;
+	padding:0.7em 0.90em 0.7em 0;
 	border-right: 1px solid #CCC;
 
 
@@ -359,6 +359,8 @@ span#tagline {
 	display:block;
 
 }
+
+
 
 
 
