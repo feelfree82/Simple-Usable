@@ -53,7 +53,6 @@
 
 
 /**
-
  * @package	   TGM-Plugin-Activation
  * @version	   2.2.0
  * @author	   Thomas Griffin <thomas@thomasgriffinmedia.com>
@@ -210,7 +209,6 @@ array('aside', 'gallery', 'image')
 		$custom = get_post_custom($post->ID);
 
 ?>
-	
 <?php
 	}
 	function update_website_url(){
