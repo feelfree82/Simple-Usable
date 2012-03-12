@@ -6,38 +6,53 @@ Template name: Contact us
 
 */ 
 
-?> 
+?>
+<?php
+if ( !is_admin() ) {
 
-<?php get_header(); ?>  
+     wp_deregister_script('maps');
+     wp_register_script('maps', ("http://maps.google.com/maps/api/js?sensor=true"));
+     wp_enqueue_script('maps');
+  }
+?>
+<script type="text/javascript">
+  window.onload=function() {
+
+var coordinates=new google.maps.LatLng(<?php echo of_get_option('latitude')?> , <?php echo of_get_option('longitude')?> );
+   var settings = {
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+      zoom: 9,
+      center: coordinates
+    };
+
+    var map = new google.maps.Map(document.getElementById("show-map"), settings);
+  }
+
+</script>
+<?php get_header(); ?>
 
 <div id="main-container">
-<div id="about-us-content"></div>
-
+  <div id="about-us-content"></div>
   <div id="contact-us">
     <h3>Get in touch</h3>
     <div id="contact-form">
       <form name="contact-form" method="post" action="">
         <fieldset>
           <legend class="visuallyhidden">Contact form</legend>
- 
           <label for="your-name">Your Name:</label>
           <input id="your-name" name="your-name" type="text" autofocus>
- 
           <label for="your-email">Your Email Address:</label>
           <input id="your-email" name="your-email" type="text">
- 
           <label for="your-comments">Your Message</label>
           <textarea id="your-comments" name="your-comments" type="text" cols"10" rows="10"></textarea>
- 
           <button class="submit" type="submit">Send Message</button>
         </fieldset>
       </form>
     </div>
-   
     <?php
                 if(isset($_POST['your-email'])) {
                 $email_to = "echo of_get_option ('contact-email-address)";
-            	$email_subject = "You've got a mail!";
+              $email_subject = "You've got a mail!";
                
                 function died($error) {
  
@@ -96,18 +111,14 @@ Template name: Contact us
                 @mail($email_to, $email_subject, $email_message, $headers);            
                
                   ?>
-              <!-- succes msg --> 
- 
-                Cheers for that. We will be in touch soon.
-       
-                <?php
+    <!-- succes msg --> 
+    
+    Cheers for that. We will be in touch soon.
+    <?php
                 }
                 ?>
- 
- 
- 
- 
-    <!-- end of form -->
+    
+    <!-- end of form --> 
   </div>
   <!-- end of contact us -->
   
@@ -118,34 +129,24 @@ Template name: Contact us
       <?php echo of_get_option ('address-body1') ?></br>
       </br>
       Phone:<?php echo of_get_option ('address-body2') ?></br>
-      Fax:<?php echo of_get_option ('address-body3') ?></span>
-        </div>
+      Fax:<?php echo of_get_option ('address-body3') ?></span> </div>
     <!-- end of address -->
     <div id="show-map" style="width: 200px; height: 200px; border: 5px solid  #D3D3D3;" title="Office Location"></div>
- 
-  </div>  <!--end of location -->  
-  </div> <!--end of main container
+  </div>
+  <!--end of location --> 
+</div>
+<!--end of main container
   ABQIAAAA3yVW40WZ8WutYqvqYAvlzBQ-1ys3aMZ7uMhYbdo1wL4sZMVqPRRxcWzmMuSfyKDsGDdmr5lR6L3RdA
-   -->  
-  
-<aside>
+   -->
 
+<aside>
   <div id="about-us"> <a href="#">
-  <hr class="clearfix"/>
+    <hr class="clearfix"/>
     <h5>About us</h5>
     </a>
     <p><?php echo of_get_option('about_us_excerpt')?></p>
     <input type="hidden" name="greeting" id="greeting" value="<?php echo of_get_option('about_us_content')?>" />
-	<a href="#" id="push-me">Read More</a>
-
-   
-  </div>
+    <a href="#" id="push-me">Read More</a> </div>
   <!--end of About us --> 
 </aside>
-
-
-
-<?php get_footer(); ?> 
-
-<script src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyCePe7pYGt17zC7kRIDpsRz4nb5F8PjTCA&sensor=true" type="text/javascript">
-</script>
+<?php get_footer(); ?>

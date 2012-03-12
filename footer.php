@@ -1,51 +1,15 @@
-		<div id="theme-footer">
-			
-		
 
-
-<footer role="contentinfo" class="clearfix" id="footer"> 
-<hr class="clearfix"/>
-
-<span id="social-set2">Get Involved<a href="<?php echo of_get_option('twitter_link');?>"><img src="../img/images/twitter.png" title="Twitter"></a>
-<a href="<?php echo of_get_option('google_link');?>"><img src="../img/images/google.png"></a></span>
+<div id="theme-footer">
+  <footer role="contentinfo" class="clearfix" id="footer">
+    <hr class="clearfix"/>
+    <span id="social-set2">Get Involved<a href="<?php echo of_get_option('twitter_link');?>"><img src="../img/images/twitter.png" title="Twitter"></a> <a href="<?php echo of_get_option('google_link');?>"><img src="../img/images/google.png"></a></span>
+    <div id="themeby" role="author"><span id="social-set3"><a href="http://www.wordpress.org"><img src="../img/images/wordpress.png" title="wordpress"/></a></span> Theme by <a href="http://www.twitter.com/amitayre">Amit Ayre</a></div>
+    <div id="copyrights">&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></div>
+    <?php echo of_get_option('google_analytics'); ?>
+    <?php wp_footer(); ?>
+  </footer>
+  <script type="text/javascript">
  
-  <div id="themeby" role="author"><span id="social-set3"><a href="http://www.wordpress.org"><img src="../img/images/wordpress.png" title="wordpress"/></a></span> Theme by <a href="http://www.twitter.com/amitayre">Amit Ayre</a></div>
-  <div id="copyrights">&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></div>
-
-
-<?php echo of_get_option('google_analytics'); ?>	
-<?php wp_footer(); ?>
-</footer>
-
-
-    
-    <script type="text/javascript">
-	
-$(function(){
-	positionFooter(); 
-	function positionFooter(){
-		var padding_top = $("#theme-footer").css("padding-top").replace("px", "");
-		var page_height = $(document.body).height() - padding_top;
-		var window_height = $(window).height();
-		var difference = window_height - page_height;
-	 
-		$("#theme-footer").css({
-			padding: difference + "px 0 0 0"
-		})
-	}
- 
-	$(window)
-		.resize(positionFooter)
-});
-	   
-$(function() { // when the document is ready to be manipulated.  
-  if (GBrowserIsCompatible()) { // if the browser is compatible with Google Map's  
-    var map = document.getElementById("show-map"); // Get div element  
-    var m = new GMap2(map); // new instance of the GMap2 class and pass in our div location.  
-    m.setCenter(new GLatLng(<?php echo of_get_option('latitude')?> , <?php echo of_get_option('longitude')?> ), 10); // pass in latitude, longitude, and zoom level.  
-  }  
-else {alert("Please upgrade your browser.");}  
-}); 
 
 
 //slider 
@@ -63,8 +27,8 @@ MBP.scaleFix();
 
 // Respond.js
 yepnope({
-	test : Modernizr.mq('(min-width)'),
-	nope : ['js/libs/respond.min.js']
+  test : Modernizr.mq('(min-width)'),
+  nope : ['js/libs/respond.min.js']
 });
 
 
@@ -72,16 +36,16 @@ yepnope({
 //masonry grid - fluid with img
 
 $(window).load(function() {
-	var $container = $('#main-container1');
+  var $container = $('#main-container1');
   $container.masonry({
     // options
-	itemSelector: '.item', 
+  itemSelector: '.item', 
     // setting columnWidth a fraction of the container width
-	columnWidth: 210,
-	gutterWidth: 40,
-	//animate
-	isAnimated: true,
-	animationOptions: {
+  columnWidth: 210,
+  gutterWidth: 40,
+  //animate
+  isAnimated: true,
+  animationOptions: {
     duration: 750,
     easing: 'linear',
     queue: false }
@@ -115,18 +79,36 @@ $(window).load(function() {
   
 });
 
+        $(function(){
+        positionFooter();
+        function positionFooter(){
+                var padding_top = $("#footer").css("padding-top").replace("px", "");
+                var page_height = $(document.body).height() - padding_top;
+                var window_height = $(window).height();
+                var difference = window_height - page_height;
+                if (difference < 0)
+                        difference = 0;
+ 
+                $("#footer").css({
+                        padding: difference + "px 0 0 0"
+                })
+        }
+ 
+        $(window)
+                .resize(positionFooter)
+});
 
 
 
-//loading images before content
 
 
 
 
 </script> 
 
-<!-- Don't forget analytics -->
-<script type="text/javascript">
+  
+  <!-- Don't forget analytics --> 
+  <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2619270-6']);
@@ -138,9 +120,6 @@ $(window).load(function() {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
+</script> 
 </div>
-
-</body>
-
-</html>
+</body></html>

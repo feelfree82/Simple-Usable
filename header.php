@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>><head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
-    <meta name="description" content="Responsive Wordpress Theme ideal for SME & Portfolio">
+    <meta name="description" content="Responsive Wordpress Theme ideal for SME &#38; Portfolio">
 	<meta name="author" content="Theme by Amit Ayre">
     <meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
@@ -34,20 +34,35 @@
 	</title>
 	
 	<link rel="shortcut icon" href="/favicon.ico">
-	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/flexslider.css" media="screen" />    
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	    <!-- For iPhone 4 -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+    <!-- For iPad 1-->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+    <!-- For iPhone 3G, iPod Touch and Android -->
+    <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+    <!-- For Nokia -->
+    <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+    <!-- For everything else -->
+    <link rel="shortcut icon" href="/favicon.ico">  
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-startup-image" href="img/h/splash.png">
 
 	<style type='text/css'>
 	body {
 		
 		<?php $typography = of_get_option('typography');
-echo 'font-family: ' . $typography['face']. '; font-size:'.$typography['size'] . ';font-style:' .$typography['style'] . '; color:'.$typography['color']. ';'?>
+			echo 'font-family: ' . $typography['face']. ';
+			font-size:'.$typography['size'] . ';
+			font-style:' .$typography['style'] . ';
+			color:'.$typography['color']. ';'?>
 	}
 	
-	body { <?php $background = of_get_option('bg_img');
-	echo 'background-image:url('.$background['image']. ');'?>
+	body{ <?php $background = of_get_option('bg_img');
+		echo 'background-image:url('.$background['image']. ');'?>
 	}
 	p{
 		color: <?php echo of_get_option('text_color')?>;
@@ -56,9 +71,8 @@ echo 'font-family: ' . $typography['face']. '; font-size:'.$typography['size'] .
 		color: <?php echo of_get_option('links_color')?>;
 	}
 	.main-nav ul li a {
-  color: <?php echo of_get_option('nav_link_color')?>;
-  margin-left:10px;
-  
+  		color: <?php echo of_get_option('nav_link_color')?>;
+  		margin-left:10px;
     }
 	
 	</style>
@@ -72,8 +86,6 @@ echo 'font-family: ' . $typography['face']. '; font-size:'.$typography['size'] .
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 
 	<?php wp_head(); ?>
-	
-	
 	<script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/libs/selectivizr-min.js"></script>    
     <script src="<?php bloginfo('template_url'); ?>/js/libs/helper.js"></script>
@@ -81,23 +93,6 @@ echo 'font-family: ' . $typography['face']. '; font-size:'.$typography['size'] .
     <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 
 
-
-             
-    
-
-    <!-- For iPhone 4 -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
-    <!-- For iPad 1-->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
-    <!-- For iPhone 3G, iPod Touch and Android -->
-    <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
-    <!-- For Nokia -->
-    <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
-    <!-- For everything else -->
-    <link rel="shortcut icon" href="/favicon.ico">  
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-startup-image" href="img/h/splash.png">
 	
 </head>
 
@@ -113,7 +108,8 @@ echo 'font-family: ' . $typography['face']. '; font-size:'.$typography['size'] .
 
         
 			<h1 id="branding">
-    <a href="<?php bloginfo('url'); ?>"><img src="<?php echo of_get_option('logo'); ?>" alt="<?php bloginfo('name'); ?>"/>
+    <a href="<?php bloginfo('url'); ?>">
+    <img src="<?php echo of_get_option('logo'); ?>" alt="<?php bloginfo('name'); ?>"/>
 	</a></h1>
     
             <span id="tagline"><?php bloginfo('description'); ?></span>

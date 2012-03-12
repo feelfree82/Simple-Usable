@@ -56,12 +56,6 @@ function optionsframework_options() {
 					
 					
                                                
-	$options[] = array( "name" => "Tracking Code",
-					"desc" => "Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme.",
-					"id" => "google_analytics",
-					"std" => "",
-					"type" => "textarea");
-
 	$options[] = array( "name" => "Footer Link1",
                     "desc" => "Add your twitter profile link here.",
                     "id" => "twitter_link",
@@ -84,7 +78,7 @@ function optionsframework_options() {
 						"type" => "heading");	
 						
 	$options[] = array( "name" => "Slide Image 1",
-						"desc" => "This creates a full size uploader that previews the image.",
+						"desc" => "This creates a full size uploader that previews the image. Image size needs to be 800px * 500px or larger.",
 						"id" => "slider-image1",
 						"type" => "upload");	
 						
@@ -175,7 +169,7 @@ function optionsframework_options() {
 						"type" => "text"); 	
 						
 	$options[] = array( "name" => "Tell people everything about your company",
-						"desc" => "About your company or product or whatever else you wish to announce to the world.",
+						"desc" => "",
 						"id" => "about_us_content",
 						"type" => "textarea"); 						
 	//contact us options 
@@ -190,16 +184,16 @@ function optionsframework_options() {
 						"type" => "text");	
 						
 												
-	$options[] = array( "name" => "Briefly describe where your office is located",
+	$options[] = array( "name" => "Briefly describe where your office is located (e.g. Our London Office)",
 						"desc" => "",
 						"id" => "address-head",
-						"std" => "e.g. Our London Office",
+						"std" => "",
 						"type" => "text");
 						
-	$options[] = array( "name" => "Your company name",
+	$options[] = array( "name" => "Your company name (e.g. Simple Usable LTD.)",
 						"desc" => "",
 						"id" => "address-head1",
-						"std" => "e.g. Simple Usable LTD.",
+						"std" => "",
 						"type" => "text");						
 													
 	$options[] = array( "name" => "Company Address",
@@ -223,14 +217,14 @@ function optionsframework_options() {
 
 
 	$options[] = array( "name" => "Latitude",
-						"desc" => "To get Latitude of your location, please visit <a href='abcd.com' target='_blank'>iTouchMap</a>",
+						"desc" => "To get Latitude of your location, please visit <a href='http://itouchmap.com/latlong.html' target='_blank'>iTouchMap</a>",
 						"id" => "latitude",
 						"std" => "",
 						"type" => "text");	
 					
 							
 	$options[] = array( "name" => "Longitude",
-						"desc" => "To get Longitude of your location, please visit <a href='abcd.com' target='_blank'>iTouchMap</a>",
+						"desc" => "To get Longitude of your location, please visit <a href='http://itouchmap.com/latlong.html' target='_blank'>iTouchMap</a>",
 						"id" => "longitude",
 						"std" => "",
 						"type" => "text");	
@@ -252,7 +246,7 @@ function optionsframework_options() {
 	$options[] = array( "name" => "Typography",
 						"desc" => "Specify the body font properties",
 						"id" => "typography",
-						"std" => array('size' => '14px','face' => 'verdana','style' => 'bold italic','color' => '#CCCCCC'),
+						"std" => array('size' => '14px','face' => 'verdana','style' => 'bold italic','color' => '#000000'),
 						"type" => "typography");
 						
 	$options[] = array( "name" => "Text Color",

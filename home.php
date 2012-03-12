@@ -40,15 +40,13 @@
 
 
     <?php query_posts(array('post_type'=>'portfolio', 'showposts' => '2'));?>
-
-
-
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>	
-      <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?> &raquo;</a></h3>
-      <figure><?php the_post_thumbnail(); ?></figure>
-      <?php the_excerpt(); ?>
-          	<?php endwhile; ?>
-	<?php endif; ?>
+		
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>	
+            <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?> &raquo;</a></h3>
+            <figure><?php the_post_thumbnail(); ?></figure>
+         <?php the_excerpt(); ?>
+       <?php endwhile; ?>
+    	<?php endif; ?>
     </div>
     <hr class="clearfix"/>
 
@@ -56,27 +54,20 @@
   </div>
   <!--end of features -->
   
-<?php query_posts('posts_per_page=1'); ?> 
-   
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-
-        
-  <div id = "recent" class="blog">
- <article><?php the_post_thumbnail(); ?>
-      <h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
-      <p id="excerpt"><?php the_excerpt(); ?></p></article>
+    <?php query_posts('posts_per_page=1'); ?> 
+      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+          <div id = "recent" class="blog">
+            <article><?php the_post_thumbnail(); ?>
+              <h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
+                <p id="excerpt"><?php the_excerpt(); ?></p></article>
+      <?php endwhile; ?>
+    	<?php endif; ?>
+          
+        </div>
+      </div>
+      <!--end of recent blogs --> 
       
-      
-      
-      	<?php endwhile; ?>
-		<?php endif; ?>
-      
-</div>
-
-  </div>
-  <!--end of recent blogs --> 
-  
 
 
   
